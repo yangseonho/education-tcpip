@@ -1,4 +1,5 @@
-package kr.nanoit.agent.education.tcpip;
+package kr.nanoit.agent.education.tcpipTest;
+
 
 import java.util.HashMap;
 import java.util.Map;
@@ -70,8 +71,8 @@ public class EducationMain {
 
         System.out.println("Client 인증");
         try {
-            SocketConnect socketConnect = new SocketConnect(parsedData.get("IP"), Integer.parseInt(parsedData.get("Port")));
-            socketConnect.Connection(id, encryptpw);
+            SocketConnect socketConnect = new SocketConnect(parsedData.get("IP"), Integer.parseInt(parsedData.get("Port")), id, encryptpw);
+            socketConnect.Connection();
         } catch (Exception e) {
             System.out.println(e + " => TCP Socket Connect fail");
             e.printStackTrace();

@@ -1,13 +1,9 @@
-package kr.nanoit.agent.education.tcpip;
+package kr.nanoit.agent.education.tcpipTest;
 
 
 import java.io.*;
 import java.net.HttpURLConnection;
-
-import java.net.MalformedURLException;
 import java.net.URL;
-import java.net.URLEncoder;
-import java.nio.charset.StandardCharsets;
 
 
 public class HttpConnect {
@@ -20,7 +16,7 @@ public class HttpConnect {
     String xmlresult = "";
 
 
-    public HttpConnect(String id, String pw, String encryptpw){
+    HttpConnect(String id, String pw, String encryptpw){
         this.id = id;
         this.pw = pw;
         this.encryptpw = encryptpw;

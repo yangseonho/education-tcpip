@@ -1,13 +1,12 @@
-package kr.nanoit.agent.education.tcpip;
+package kr.nanoit.agent.education.tcpipTest;
 
-import java.io.UnsupportedEncodingException;
+import javax.crypto.Cipher;
+import javax.crypto.spec.IvParameterSpec;
+import javax.crypto.spec.SecretKeySpec;
 import java.nio.charset.StandardCharsets;
 import java.security.Key;
 import java.util.Arrays;
 import java.util.Base64;
-import javax.crypto.Cipher;
-import javax.crypto.spec.SecretKeySpec;
-import javax.crypto.spec.IvParameterSpec;
 
 public class Crypt {
 
@@ -23,7 +22,7 @@ public class Crypt {
     private Key key;
     private IvParameterSpec ivParameterSpec;
 
-    public Crypt(final String encryptKey) { this.encryptKey = encryptKey; }
+    Crypt(final String encryptKey) { this.encryptKey = encryptKey; }
 
     public void initialize() {
 

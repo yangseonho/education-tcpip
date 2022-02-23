@@ -1,4 +1,4 @@
-package kr.nanoit.agent.education.tcpip;
+package kr.nanoit.agent.education.tcpipTest;
 
 
 import org.w3c.dom.Document;
@@ -7,7 +7,6 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
-
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -31,7 +30,7 @@ public class XMLParser {
 
 
     String xmlString = "";
-    public XMLParser(String xmlString){
+    XMLParser(String xmlString){
         this.xmlString = xmlString;
     }
 
